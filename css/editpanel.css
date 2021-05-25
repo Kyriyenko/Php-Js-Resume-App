@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.edit-form
+{
+    margin-left: 23px;
+
+}
+
+
+button
+{
+    cursor: pointer;
+}
+
+body
+{
+    background-color: #63738a;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fill-content
+{
+    display: flex;
+    flex-direction: column;
+}

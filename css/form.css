@@ -1,0 +1,108 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.delete-btn
+{
+  color: aqua;
+  cursor: pointer;
+}
+
+.contact-input
+{
+  width: 390px;
+
+}
+
+.nav-btn
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+label
+{
+  font-size: large;
+}
+
+.text
+{
+  width: 500px;
+}
+
+.text-area
+{
+  width: 500px;
+  height: 100px;
+}
+
+input
+{
+  width: 100px;
+  height: 30px;
+}
+.container
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.form
+{
+  margin-top: 40px;
+  width: 1200px;
+  height: 900px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+
+}
+
+.input-item
+{
+  display: flex;
+  justify-content: left;
+}
+
+.form-item
+{
+  width: 780px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+
+}
+
+.btn-save{
+  background-color: #428bca;
+  width: 80px;
+  height: 30px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.next-btn
+{
+  width: 50px;
+  height: 30px;
+}
+
+.update-btn{
+  width: 80px;
+  height: 30px;
+  background-color: #428bca;
+  margin-right: 20px;
+}
+.btn-add{
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #ffff;
+}

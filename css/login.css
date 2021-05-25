@@ -1,0 +1,126 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background-color: #63738a;
+
+}
+
+.login-form {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #f2f3f7;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-color: #63738a;
+}
+
+input
+{
+  height: 30px;
+  border:  1px solid #a1a1a3;
+  outline:none;
+}
+
+
+
+
+.header-logo
+{
+  display: flex;
+  justify-content: center;
+  margin-top:20px;
+  color: #636363;
+  align-items: center;
+}
+.line
+{
+  width: 130px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.header-inner
+{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: #aba8aa;
+}
+
+.form-inputs
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  color: #636363;
+}
+
+.green-text
+{
+  color: #53ac53;
+}
+
+.name-section
+{
+  display: flex;
+  align-items: center;
+}
+.maine-section
+{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.maine-input
+{
+  margin-top: 20px;
+}
+
+.radio-section
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.login-btn
+{
+  height: 40px;
+  background-color: #469c46;
+  cursor: pointer;
+  color: #ffff;
+  border: 0;
+}
+.account-link
+{
+  text-decoration: none;
+  color: #ffff;
+  position: absolute;
+  top:80%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+
