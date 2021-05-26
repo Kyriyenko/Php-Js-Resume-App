@@ -22,35 +22,35 @@
       <div class="form-item">
         <label>name</label>
         <div class="input-item">
-          <input class="text" type="text" name="name">
+          <input class="text input-name" type="text" name="name">
         </div>
       </div>
 
       <div class="form-item">
         <label>Email</label>
         <div class="input-item">
-          <input class="text" type="text" name="email">
+          <input class="text input-email" type="text" name="email">
         </div>
       </div>
 
       <div class="form-item">
         <label>Password</label>
         <div class="input-item">
-          <input class="text" type="text" name="password">
+          <input class="text input-password" type="text" name="password">
         </div>
       </div>
 
       <div class="form-item">
         <label>Gender</label>
-        <div class="input-item">
-          <input type="radio" name="gender" value="male"><label>Male</label>
-          <input type="radio" name="gender" value="female"><label>Female</label>
+        <div class="input-item input-gender">
+          <input id="r1" class="gen" type="radio" name="gender" value="male"><label>Male</label>
+          <input id="r2"  class="gen" type="radio" name="gender" value="female"><label>Female</label>
         </div>
       </div>
 
       <div class="form-item">
         <label>Birthdate</label>
-        <input class="text" type="date" name="password">
+        <input class="text input-birthdate" type="date" name="password">
       </div>
 
       <div class="form-contact">
@@ -62,7 +62,7 @@
             <option>instagram</option>
             <option>facebook</option>
           </select>
-          <input class="contact-input" type="text" name="contact">
+          <input class="contact-input " type="text" name="contact">
           <span class="delete-btn">delete</span>
         </div>
 
@@ -81,8 +81,8 @@
 
         <div class="form-item">
           <label>Hobbies</label>
-          <div class="input-item">
-            <textarea class="text-area">  </textarea>
+          <div class="input-item ">
+            <textarea class="text-area input-hobbies">  </textarea>
           </div>
         </div>
 
@@ -90,22 +90,32 @@
         <div class="form-item">
           <label>Some Words</label>
           <div class="input-item">
-            <textarea class="text-area">  </textarea>
+            <textarea class="text-area  input-somewords">  </textarea>
           </div>
         </div>
 
 
         <div class="nav-btn">
-          <button class="update-btn">Update</button>
-          <button class="next-btn">Next</button>
+          <button class="update-btn">OK</button>
+          <button class="next-btn">Cancel</button>
         </div>
       </div>
 
+        <div class="showData">
 
+        </div>
     </div>
+
+
 
   </div>
 </div>
+
+
+
+
+
+<script src="js/script.js"></script>
 
 </body>
 

@@ -53,6 +53,6 @@
 <a class="account-link" href="#">Already have an account?Skin It</a>
 
 
-  <script src="js/script.js"></script>
+
 </body>
 </html>
