@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+
+
 span
 {
   color: red;
@@ -22,10 +24,17 @@ span
 
 }
 
+.showData
+{
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
 .nav-btn
 {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -63,7 +72,7 @@ input
 {
   margin-top: 40px;
   width: 1200px;
-  height: 900px;
+  min-height: 900px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   display: flex;
   justify-content: center;
@@ -88,27 +97,49 @@ input
 
 .btn-save{
   background-color: #428bca;
-  width: 80px;
+  width: 90px;
   height: 30px;
   color: #ffff;
+  margin-right: 20px;
   cursor: pointer;
 }
 
 .next-btn
 {
-  width: 50px;
+  width: 80px;
   height: 30px;
+  border-radius: 12px;
+  background-color: #ffff;
+  border: 1px solid #212020;
 }
 
 .update-btn{
-  width: 80px;
+  width: 90px;
   height: 30px;
   background-color: #428bca;
   margin-right: 20px;
 }
 .btn-add{
+  margin-left: 20px;
   width: 80px;
   height: 30px;
-  cursor: pointer;
+  border-radius: 12px;
   background-color: #ffff;
+  border: 1px solid #212020;
+}
+
+.ok-btn
+{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #55e9d2;
+  color: #ffff;
+  border: none;
+}
+
+.ok-btn:hover
+{
+  background-color: #2a907b;
+  cursor: pointer;
 }

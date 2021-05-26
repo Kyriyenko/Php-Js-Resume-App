@@ -58,19 +58,27 @@
         <input class="text input-birthdate" type="date" name="password">
       </div>
         <span class="date-exe"></span>
-
       <div class="form-contact">
+
+
+
         <div class="form-item">
           <label>Contacts</label>
-          <select>
+          <select class="networks-input">
             <option>facebook</option>
             <option>telegram</option>
             <option>instagram</option>
-            <option>facebook</option>
+            <option>twitter</option>
+              <option>other</option>
           </select>
-          <input class="contact-input " type="text" name="contact">
-          <span class="delete-btn">delete</span>
+            <div class="form-item-box">
+                <input class="contact-input " type="text" name="contact">
+                <span class="delete-btn">delete</span>
+            </div>
         </div>
+
+
+
 
         <div class="nav-btn">
           <button class="btn-save">Save</button>
@@ -105,9 +113,9 @@
           <button class="update-btn">Update</button>
           <button class="next-btn">Cancel</button>
             <input type="checkbox" class="check">
-            <span class="check-exe"></span>
             <button class="ok-btn">OK</button>
         </div>
+          <span class="check-exe"></span>
       </div>
 
         <div class="showData">
@@ -124,6 +132,7 @@
 
 <script src="../js/script.js"></script>
 <script src="../js/validation.js"></script>
+<script src="../js/form.js"></script>
 
 
 

@@ -24,7 +24,7 @@ $mysql->close();
 <?php include "../pages/menu.php"; ?>
 
 <div class="container">
-    <form  class="edit-form" action="change-content.php" method="post">
+    <form  class="edit-form" action="../change-content.php" method="post">
         <div class="content">
             <h1>Content settings</h1>
             <div class="contact">
@@ -67,7 +67,7 @@ $mysql->close();
         <button class="confirm">Confirm</button>
     </form>
 
-    <form class="edit-form" action="filldefault.php" method="post">
+    <form class="edit-form" action="../filldefault.php" method="post">
         <div class="fill-content">
             <h2>Fll default</h2>
             <button>Submit</button>
@@ -75,7 +75,7 @@ $mysql->close();
     </form>
 
 
-    <form  class="edit-form" action="makedump.php" method="post" ">
+    <form  class="edit-form" action="../makedump.php" method="post" ">
         <div class="fill-content">
             <h2>Make DB dump</h2>
             <button>Submit</button>
@@ -83,7 +83,7 @@ $mysql->close();
     </form>
 
 
-    <form  class="edit-form" action="restoredump.php" method="post" ">
+    <form  class="edit-form" action="../restoredump.php" method="post" ">
     <div class="fill-content">
         <h2>Restore DB dump</h2>
         <button>Submit</button>

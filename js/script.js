@@ -24,8 +24,6 @@ let user={
 
 btnCancel.addEventListener('click', cleanInput);
 
-
-
 function cleanInput(event) {
     event.preventDefault();
     name.value=" ";
@@ -59,21 +57,7 @@ function addToObject(event){
             showData.innerHTML=+user.name+" "+user.email+"   "+user.password+"   "+user.birthdate+"   "
             +user.contact+"   "+user.hobbies+"   "+user.someWords;
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

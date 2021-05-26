@@ -20,11 +20,9 @@ btnOK.addEventListener('click',function (e){
         checkPass();
         checkEmail();
         checkDate();
-        addToObject();
     }
     else
         checkBoxExe.innerText="checkbox must be checked!";
-
 
 });
 
@@ -43,8 +41,8 @@ function checkDate(){
         dateExe.innerText="Wrong date (it cant be today)";
         return;
     }
+    addToObject();
 
-    console.log("all good");
 }
 
 
@@ -107,6 +105,4 @@ function checkName()
         return;
     }
 }
-
-
 
