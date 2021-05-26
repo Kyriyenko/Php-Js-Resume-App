@@ -28,7 +28,7 @@ if(count($user)==0)
 
 
 
-<?php include "menu.php"; ?>
+<?php include "pages/menu.php"; ?>
 <div class="container">
   <div class="content">
     <div class="content-aside">

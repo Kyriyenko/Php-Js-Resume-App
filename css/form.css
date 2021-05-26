@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+span
+{
+  color: red;
+}
+
 .delete-btn
 {
   color: aqua;

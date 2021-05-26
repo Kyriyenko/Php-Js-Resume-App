@@ -6,7 +6,8 @@ let birthdate=document.querySelector('.input-birthdate');
 let contact=document.querySelector('.contact-input');
 let hobbies=document.querySelector('.input-hobbies');
 let someWords=document.querySelector('.input-somewords');
-let btnOK=document.querySelector('.update-btn');
+let btnUpdate=document.querySelector('.update-btn');
+let btnOK=document.querySelector('.ok-btn');
 let btnCancel=document.querySelector('.next-btn');
 let showData=document.querySelector('.showData');
 
@@ -22,7 +23,7 @@ let user={
 };
 
 btnCancel.addEventListener('click', cleanInput);
-btnOK.addEventListener('click',addToObject);
+
 
 
 function cleanInput(event) {
@@ -39,9 +40,11 @@ function cleanInput(event) {
 
 
 function addToObject(event){
-    event.preventDefault();
+
     user.name=name.value;
     user.email=email.value;
+
+    console.log(user.email);
     user.password=pass.value;
     if (document.getElementById('r1').checked) {
         user.gender = document.getElementById('r1').value;
@@ -53,12 +56,13 @@ function addToObject(event){
     user.contact=contact.value;
     user.hobbies=hobbies.value;
     user.someWords=someWords.value;
+            showData.innerHTML=+user.name+" "+user.email+"   "+user.password+"   "+user.birthdate+"   "
+            +user.contact+"   "+user.hobbies+"   "+user.someWords;
 
-    for (let key in user) {
-        showData.innerHTML+=user[key]+"   ";
-    }
 
 }
+
+
 
 
 

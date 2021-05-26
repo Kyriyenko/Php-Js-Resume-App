@@ -21,7 +21,7 @@ $mysql->close();
 </head>
 <body>
 
-<?php include "menu.php"; ?>
+<?php include "../pages/menu.php"; ?>
 
 <div class="container">
     <form  class="edit-form" action="change-content.php" method="post">

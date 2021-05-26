@@ -11,9 +11,9 @@
 </head>
 <body>
 
-<?php include "menu.php"; ?>
+<?php include "../pages/menu.php"; ?>
 
-<form action="auth.php" method="post" class="login-form">
+<form action="../auth.php" method="post" class="login-form">
   <div class="form-header">
     <div class="header-logo">
       <div class="line"><hr></div>

@@ -41,6 +41,6 @@ $mysql=new mysqli('localhost','admin','ei7veeChu4bo','my_db');
 $mysql->query("INSERT INTO `users` (`name`,`email`,`password`)  VALUES('$name','$ema','$pass')");
 $mysql->close();
 
-header('location:/');
+header('location:../index.php');
 
 ?>

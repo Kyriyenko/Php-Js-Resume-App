@@ -31,7 +31,7 @@ $user=$result->fetch_assoc();
 
 if(count($user)==0)
 {
-    header('location:/registration.php');
+    header('location:../pages/registration.php');
     exit();
 }
 else
@@ -42,7 +42,7 @@ else
 
 if(isset($_SESSION['username']))
 {
-    header('location:/');
+    header('location:../pages/registration.php');
 }
 
 
