@@ -6,7 +6,7 @@ console.log(networkSection.value);
 
 
 
-networkSection.addEventListener('change',function (e){
+networkSection.addEventListener('click',function (e){
     e.preventDefault();
     console.log(networkSection.value);
     let value=networkSection.value;

@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(!isset($_SESSION['username']))
+{
+    header('location:/index.php');
+    exit();
+}
+?>
+
+
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -14,7 +24,7 @@
 
 <body>
 
-<?php include "../pages/menu.php"; ?>
+
 <div class="container">
   <div class="form">
     <div class="form-content">
@@ -22,7 +32,7 @@
       <div class="form-item">
         <label>name</label>
         <div class="input-item">
-          <input class=" text input-name" type="text" name="name">
+          <input class=" text input-name"  placeholder="Your Name" type="text" name="name">
         </div>
 
       </div>
@@ -31,7 +41,7 @@
       <div class="form-item">
         <label>Email</label>
         <div class="input-item">
-          <input class="text input-email" type="text" name="email">
+          <input class="text input-email" placeholder="Email" type="text" name="email">
         </div>
       </div>
         <span class="ema-exe"></span>
@@ -39,7 +49,7 @@
       <div class="form-item">
         <label>Password</label>
         <div class="input-item">
-          <input class="text input-password" type="text" name="password">
+          <input class="text input-password" placeholder="******" type="text" name="password">
         </div>
       </div>
         <span class="exe pass-exe"></span>
@@ -101,7 +111,7 @@
         <div class="form-item">
           <label>Hobbies</label>
           <div class="input-item ">
-            <textarea class="text-area input-hobbies">  </textarea>
+            <textarea   class="text-area input-hobbies">  </textarea>
           </div>
         </div>
 
@@ -109,7 +119,7 @@
         <div class="form-item">
           <label>Some Words</label>
           <div class="input-item">
-            <textarea class="text-area  input-somewords">  </textarea>
+            <textarea  class="text-area  input-somewords">  </textarea>
           </div>
         </div>
 

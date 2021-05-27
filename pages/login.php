@@ -11,35 +11,43 @@
 </head>
 <body>
 
-<?php include "../pages/menu.php"; ?>
+
 
 <form action="../auth.php" method="post" class="login-form">
   <div class="form-header">
     <div class="header-logo">
       <div class="line"><hr></div>
-      <h1>Login</h1>
+      <h1 class="log">Login</h1>
       <div class="line"><hr></div>
     </div>
   </div>
   <div class="form-inputs">
     <div class="maine-section">
-      <input  class="maine-input" name="namee" type="text">
-      <input  class="maine-input" name="passw" type="text">
+      <input  class="maine-input" id="name" name="namee" type="text">
+        <span class="name-exe"></span>
+      <input  class="maine-input" id="pass" name="passw" type="text">
+        <span class="pass-exe"></span>
     </div>
   </div>
   <div class="form-inputs">
     <div class="name-section">
-      <input type="radio" name="acc" id="size_1" value="small">
+      <input type="radio" name="acc"  class="radio-1" id="size_1" value="small">
       <label for="size_1">i accept <span class="green-text">Terms Of Use</span>&<span class="green-text">Privacy Policy.</span></label>
     </div>
   </div>
+
+
   <div class="form-inputs">
     <div class="maine-section">
-      <button class="login-btn">LogIn</button>
+        <span class="check-exe"></span>
+      <button  class="login-btn">LogIn</button>
     </div>
   </div>
 </form>
 <a class="account-link" href="#">Create new account</a>
-<script src="js/script.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../js/login.js"></script>
 </body>
 </html>

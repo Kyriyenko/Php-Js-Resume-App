@@ -10,10 +10,10 @@
 </head>
 <body>
 
-<?php include "../pages/menu.php"; ?>
 
 
-  <form  action="../check.php"  method="post" id="dm"  class="registration-form">
+
+  <form   id="dm"  class="registration-form">
     <div class="form-header">
       <div class="header-logo">
         <div class="line"><hr></div>
@@ -24,35 +24,39 @@
         Create your own account. Its free and only takes one minute
       </div>
     </div>
-    <div class="form-inputs">
-      <div class="name-section">
-        <input class="input-firstName" id="name" placeholder="First Name" name="name" type="text">
-        <input class="input-lastName" id="last-name" placeholder="Last Name" type="text">
-      </div>
-    </div>
+
+
+
     <div class="form-inputs">
     <div class="maine-section">
-      <input  class="maine" placeholder="Email"  name="ema" type="text">
-      <input  class="maine" placeholder="password" name="pass" type="text">
-      <input  class="maine"  placeholder="confirm password" name="confPass" type="text">
+        <input  class="maine input-firstName" id="name" placeholder="First Name" name="name" type="text">
+        <span class="first-name-exe"></span>
+      <input  class="maine input-ema" placeholder="Email"  name="ema" type="text">
+        <span class="email-exe"></span>
+      <input  class="first-pass maine" placeholder="password" name="pass" type="text">
+        <span class="pass-exe"></span>
+      <input  class="last-pass maine"  placeholder="confirm password" name="confPass" type="text">
     </div>
+
     </div>
     <div class="form-inputs">
       <div class="name-section">
-        <input type="radio" name="acc" id="size_1" value="small">
+        <input class="r1" type="radio" name="acc" id="size_1" value="small">
         <label for="size_1">i accept <span class="green-text">Terms Of Use</span>&<span class="green-text">Privacy Policy.</span></label>
       </div>
     </div>
     <div class="form-inputs">
       <div class="maine-section">
-        <button class="register-btn">Register Now</button>
+          <span class="checkbox-exe"></span>
+        <button id="send-val" class="register-btn">Register Now</button>
       </div>
     </div>
   </form>
 
 <a class="account-link" href="#">Already have an account?Skin It</a>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../js/registration.js"></script>
 
 </body>
 </html>

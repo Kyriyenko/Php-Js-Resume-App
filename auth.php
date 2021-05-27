@@ -4,10 +4,10 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
 session_start();
-$name =filter_var(trim($_POST['namee']),
+$name =filter_var(trim($_POST['name']),
     FILTER_SANITIZE_STRING);
 
-$pass =filter_var(trim($_POST['passw']),
+$pass =filter_var(trim($_POST['password']),
     FILTER_SANITIZE_STRING);
 
 
@@ -42,7 +42,7 @@ else
 
 if(isset($_SESSION['username']))
 {
-    header('location:../pages/registration.php');
+//    echo 'index.php?tab=resume';
 }
 
 

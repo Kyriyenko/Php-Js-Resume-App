@@ -1,4 +1,11 @@
 <?php
+session_start();
+if(!isset($_SESSION['username']))
+{
+    header('location:/index.php');
+    exit();
+}
+
 $mysql=new mysqli('localhost','admin','ei7veeChu4bo','my_db');
 $result=$mysql->query("SELECT * FROM `resume_data` WHERE `type`='default' ");
 $user=$result->fetch_assoc();
@@ -21,13 +28,13 @@ $mysql->close();
 </head>
 <body>
 
-<?php include "../pages/menu.php"; ?>
+
 
 <div class="container">
-    <form  class="edit-form" action="../change-content.php" method="post">
-        <div class="content">
+    <form  class="container-edit-form" action="../change-content.php" method="post">
+        <div class="content-edit">
             <h1>Content settings</h1>
-            <div class="contact">
+            <div class="contact-form-edit">
                 <div class="descr">Enter your name</div>
 
                  <input type="text" name="user-name" value="  <?php echo $user['user_name']; ?>"/>
@@ -63,8 +70,9 @@ $mysql->close();
                 <div class="descr">Enter your experience</div>
                 <textarea  name="experience"><?php echo $user['user_experience'] ?></textarea>
             </div>
+            <button class="confirm">Confirm</button>
         </div>
-        <button class="confirm">Confirm</button>
+
     </form>
 
     <form class="edit-form" action="../filldefault.php" method="post">

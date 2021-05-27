@@ -3,7 +3,6 @@ let email=document.querySelector('.input-email');
 let pass=document.querySelector('.input-password');
 let gender=document.querySelectorAll('.gen');
 let birthdate=document.querySelector('.input-birthdate');
-let contact=document.querySelector('.contact-input');
 let hobbies=document.querySelector('.input-hobbies');
 let someWords=document.querySelector('.input-somewords');
 let btnUpdate=document.querySelector('.update-btn');
@@ -31,7 +30,6 @@ function cleanInput(event) {
     pass.value=" ";
     gender.value=" ";
     birthdate.value=" ";
-    contact.value=" ";
     hobbies.value=" ";
     someWords.value=" ";
 }
