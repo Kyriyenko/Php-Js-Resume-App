@@ -19,7 +19,7 @@ let user={
     birthdate:" ",
     contact:" ",
     hobbies:" ",
-    someWords:" "
+    someWords:" ",
 };
 
 btnCancel.addEventListener('click', cleanInput);
@@ -37,7 +37,7 @@ function cleanInput(event) {
 }
 
 
-function addToObject(event){
+function addToObject(){
 
     user.name=name.value;
     user.email=email.value;

@@ -61,19 +61,24 @@
       <div class="form-contact">
 
 
-
+        <div class="select-div">
+            <label class="contact-label">Contacts</label>
+            <select class="networks-input">
+                <option>facebook</option>
+                <option>telegram</option>
+                <option>instagram</option>
+                <option>twitter</option>
+                <option>other</option>
+            </select>
+        </div>
         <div class="form-item">
-          <label>Contacts</label>
-          <select class="networks-input">
-            <option>facebook</option>
-            <option>telegram</option>
-            <option>instagram</option>
-            <option>twitter</option>
-              <option>other</option>
-          </select>
+
+
+
+
             <div class="form-item-box">
-                <input class="contact-input " type="text" name="contact">
-                <span class="delete-btn">delete</span>
+
+
             </div>
         </div>
 

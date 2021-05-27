@@ -6,7 +6,7 @@ let checkBoxExe=document.querySelector('.check-exe');
 let check=document.querySelector('.check');
 let date = new Date();
 
-let reg=/[A-Za-zA]/;
+let regCheckLatinSymblos=/[A-Za-zA]/;
 let regNum=/[0-9]/;
 let ruSymb=/[Яа-яЁё]/;
 let pattern=/^[^]+@[^ ]+\.[a-z]{2,3}$/;
@@ -65,7 +65,7 @@ function checkPass(){
         return;
     }
 
-    if(!reg.test(pass.value)) {
+    if(!regCheckLatinSymblos.test(pass.value)) {
         passExe.innerText='password must have eng symbols';
         return;
     }
@@ -79,17 +79,20 @@ function checkPass(){
         nameExe.innerText='the password must not have Russian letters';
         return;
     }
-
 }
-
 
 function checkName()
 {
     nameExe.innerText=" ";
-    if(!reg.test(name.value)) {
+    if(!regCheckLatinSymblos.test(name.value)) {
         nameExe.innerText='incorect name';
         return;
     }
+    if(name.value.length<2){
+        nameExe.innerText='name is too short';
+        return;
+    }
+
     if(pattern.test(name.value)){
         nameExe.innerText='name cant include [/%$#@!*&^}]';
         return;

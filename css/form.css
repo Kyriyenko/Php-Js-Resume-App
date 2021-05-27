@@ -3,13 +3,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:sans-serif;
 }
 
 
+.select-div
+{
+margin-top: 12px;
+
+}
+
+
+.contact-label
+{
+  margin-right: 10px;
+}
+
+.contact-item
+{
+  width: 200px;
+}
+
+.item-box-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  width: 600px;
+}
 
 span
 {
   color: red;
+}
+
+.form-item-box
+{
+  margin: 0 auto;
 }
 
 .delete-btn
@@ -55,10 +85,28 @@ label
   height: 100px;
 }
 
+option
+{
+  background-color: #ebebeb;
+  color: #575656;
+  border: 1px solid #575656;
+}
+
+.text-area
+{
+  background-color: #ebebeb;
+  color: #575656;
+  border: 1px solid #575656;
+}
+
+
 input
 {
   width: 100px;
   height: 30px;
+  background-color: #ebebeb;
+  color: #575656;
+  border: 1px solid #575656;
 }
 .container
 {
@@ -70,6 +118,8 @@ input
 
 .form
 {
+  color: #575656;
+  background-color: #ebebeb;
   margin-top: 40px;
   width: 1200px;
   min-height: 900px;
@@ -87,7 +137,7 @@ input
 
 .form-item
 {
-  width: 780px;
+  width: 980px;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -97,6 +147,7 @@ input
 
 .btn-save{
   background-color: #428bca;
+  border: none;
   width: 90px;
   height: 30px;
   color: #ffff;
@@ -114,10 +165,13 @@ input
 }
 
 .update-btn{
+  background-color: #428bca;
+  border: none;
   width: 90px;
   height: 30px;
-  background-color: #428bca;
+  color: #ffff;
   margin-right: 20px;
+  cursor: pointer;
 }
 .btn-add{
   margin-left: 20px;
@@ -126,6 +180,16 @@ input
   border-radius: 12px;
   background-color: #ffff;
   border: 1px solid #212020;
+}
+
+.file-input-name
+{
+  width: 200px;
+}
+
+.input-network
+{
+  width: 200px;
 }
 
 .ok-btn
@@ -143,3 +207,5 @@ input
   background-color: #2a907b;
   cursor: pointer;
 }
+
+
