@@ -23,9 +23,9 @@
   </div>
   <div class="form-inputs">
     <div class="maine-section">
-      <input  class="maine-input" id="name" name="namee" type="text">
+      <input  class="maine-input" id="name" name="namee" placeholder="name" type="text">
         <span class="name-exe"></span>
-      <input  class="maine-input" id="pass" name="passw" type="text">
+      <input  class="maine-input" id="pass" name="passw"  placeholder="password" type="password">
         <span class="pass-exe"></span>
     </div>
   </div>

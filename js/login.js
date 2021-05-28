@@ -37,7 +37,20 @@ if (radioBtn.checked){
              console.log("waiting.....");
            },
            success:function (data){
-               window.open (data,'_self',false);
+
+               if(data=="done")
+               {
+               checkBoxExe.innerText="You are successfully logged in";
+                   setTimeout(function() {
+                       window.location.href = '../index.php';
+
+
+                   }, 1000);
+               }
+               else
+               {
+                   checkBoxExe.innerText="wrong password or name";
+               }
 
            }
 

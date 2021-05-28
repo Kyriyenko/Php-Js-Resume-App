@@ -31,7 +31,7 @@ $user=$result->fetch_assoc();
 
 if(count($user)==0)
 {
-    header('location:../pages/registration.php');
+   echo "wrong";
     exit();
 }
 else
@@ -40,9 +40,11 @@ else
 }
 
 
+
+
 if(isset($_SESSION['username']))
 {
-//    echo 'index.php?tab=resume';
+  echo "done";
 }
 
 

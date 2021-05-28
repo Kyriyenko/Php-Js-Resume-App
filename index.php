@@ -19,14 +19,12 @@
 include "pages/menu.php";
 
 
-$allowed = array('registration', 'login', 'editpanel', 'form', 'resume');
-$page = ( isset($_GET['tab']) ) ? $_GET['tab'] : 'resume';
-if ( in_array($page, $allowed) ) {
-    include("pages/$page.php");
-}
 ?>
 
+<div class="input-container"><?php include "pages/resume.php";?></div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/nav.js"></script>
 </body>
 
 </html>
