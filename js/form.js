@@ -1,14 +1,10 @@
-let formItemBox=document.querySelector('.form-item-box');
 
-let networkSection=document.querySelector('.networks-input');
-console.log(networkSection.value);
-
-
-
+var networkSection=document.querySelector('.networks-input');
 
 networkSection.addEventListener('click',function (e){
     e.preventDefault();
-    console.log(networkSection.value);
+
+    let formItemBoxIn=document.querySelector('.form-item-box');
     let value=networkSection.value;
 
     let inputDiv = document.createElement('div');
@@ -20,7 +16,6 @@ networkSection.addEventListener('click',function (e){
     inputDiv.style.alignItems='center';
 
     if(value==='other') {
-
 
         let newContactFile = document.createElement('input');
         newContactFile.innerText = ' '
@@ -37,7 +32,7 @@ networkSection.addEventListener('click',function (e){
         cancelButton.classList.add('delete-btn');
         inputDiv.appendChild(cancelButton);
 
-        formItemBox.appendChild(inputDiv);
+        formItemBoxIn.appendChild(inputDiv);
 
         newContactFile.value = "";
         newContactName.value = "";
@@ -58,19 +53,17 @@ networkSection.addEventListener('click',function (e){
         cancelButton.classList.add('delete-btn');
         inputDiv.appendChild(cancelButton);
 
-        formItemBox.appendChild(inputDiv);
+        formItemBoxIn.appendChild(inputDiv);
 
         newContactInput.value = "";
         newContactName.value = "";
 
     }
 
-
-
 });
 
 
-let itemBox=document.querySelector('.form-item-box');
+var itemBox=document.querySelector('.form-item-box');
 
 itemBox.addEventListener('click',function (e){
     let item = e.target;

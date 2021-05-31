@@ -15,7 +15,7 @@ window.onload = function () {
                     type:'POST',
                     cache:'false',
                     data:{
-                        'page':item.text
+                        'page':item.dataset.page
                     },
                     dataType:'html',
                     beforeSend:function (){

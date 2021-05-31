@@ -1,21 +1,21 @@
-let firstName=document.querySelector(".input-firstName");
-let email=document.querySelector(".input-ema");
-let firstPassword=document.querySelector(".first-pass");
-let lastPassword=document.querySelector(".last-pass");
-let check=document.querySelector(".r1");
-let firstNameExe=document.querySelector(".first-name-exe");
-let emailExe=document.querySelector(".email-exe");
-let passExe=document.querySelector(".pass-exe");
-let checkBoxExe=document.querySelector(".checkbox-exe");
+var firstNameReg=document.querySelector(".input-firstName");
+var email=document.querySelector(".input-ema");
+var firstPassword=document.querySelector(".first-pass");
+var lastPassword=document.querySelector(".last-pass");
+var check=document.querySelector(".r1");
+var firstNameExe=document.querySelector(".first-name-exe");
+var emailExe=document.querySelector(".email-exe");
+var passExe=document.querySelector(".pass-exe");
+var checkBoxExe=document.querySelector(".checkbox-exe");
 
-let isNameOk=false;
-let isEmailOk=false;
-let isPasswordOk=false;
+var isNameOkReg=false;
+var isEmailOkReg=false;
+var isPasswordOkReg=false;
 
-let regCheckLatinSymblos=/[A-Za-zA]/;
-let regNum=/[0-9]/;
-let ruSymb=/[Яа-яЁё]/;
-let pattern=/^[^]+@[^ ]+\.[a-z]{2,3}$/;
+var regCheckLatinSymblosReg=/[A-Za-zA]/;
+var regNum=/[0-9]/;
+var ruSymb=/[Яа-яЁё]/;
+var pattern=/^[^]+@[^ ]+\.[a-z]{2,3}$/;
 
 
 $("form").submit(function (event){
@@ -25,17 +25,17 @@ $("form").submit(function (event){
     passExe.innerText="";
     checkBoxExe.innerText="";
     if (check.checked){
-    nameCheck(firstName,firstNameExe);
+    nameCheck(firstNameReg,firstNameExe);
     checkEmail();
     checkPass();
 
-   if(isNameOk===true&&isEmailOk===true&&isPasswordOk===true){
+   if(isNameOkReg===true&&isEmailOkReg===true&&isPasswordOkReg===true){
     $.ajax({
        url:'../check.php',
        type:'POST',
        cache:'false',
        data:{
-           'name':firstName.value,
+           'name':firstNameReg.value,
            'email':email.value,
            'password':firstPassword.value
        },
@@ -55,9 +55,7 @@ $("form").submit(function (event){
 
     });
 
-
    }
-
 
     }else {
         checkBoxExe.innerText="checkbox must be checked";
@@ -81,7 +79,7 @@ function checkPass(){
         return;
     }
 
-    isPasswordOk=true;
+    isPasswordOkReg=true;
 }
 
 
@@ -94,7 +92,7 @@ function checkEmail(){
         return;
     }
 
-    isEmailOk=true;
+    isEmailOkReg=true;
 }
 
 
@@ -105,7 +103,7 @@ function nameCheck(name,nameExe){
         return;
     }
 
-    if(!regCheckLatinSymblos.test(name.value)) {
+    if(!regCheckLatinSymblosReg.test(name.value)) {
         nameExe.innerText='incorect name';
         return;
     }
@@ -125,5 +123,5 @@ function nameCheck(name,nameExe){
         return;
     }
 
-    isNameOk=true;
+    isNameOkReg=true;
 }

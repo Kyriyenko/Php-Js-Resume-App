@@ -2,10 +2,12 @@
 $mysql=new mysqli('localhost','admin','ei7veeChu4bo','my_db');
 $result=$mysql->query("SELECT * FROM `resume_data` WHERE `type`='editable' ");
 $user=$result->fetch_assoc();
+$str=$user['user_skills'];
 if(count($user)==0)
 {
     $result=$mysql->query("SELECT * FROM `resume_data` WHERE `type`='default' ");
     $user=$result->fetch_assoc();
+    $str=$user['user_skills'];
 
 }
 
@@ -45,7 +47,15 @@ if(count($user)==0)
             <div class="aside-block">
                 <div class="head">SKILLS</div>
                 <div class="ol-list">
-                    <?php  echo $user['user_skills']; ?>
+                    <?php
+
+                    $skillsArr=explode(',',$str);
+                    for($i=0;$i<count($skillsArr);$i++ )
+                    {
+                        echo "<ol>$skillsArr[$i]</ol>";
+                    }
+
+                    ?>
                 </div>
             </div>
         </div>

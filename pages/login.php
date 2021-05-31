@@ -13,7 +13,7 @@
 
 
 
-<form action="../auth.php" method="post" class="login-form">
+<form  method="post" class="login-form">
   <div class="form-header">
     <div class="header-logo">
       <div class="line"><hr></div>
@@ -44,7 +44,7 @@
     </div>
   </div>
 </form>
-<a class="account-link" href="#">Create new account</a>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

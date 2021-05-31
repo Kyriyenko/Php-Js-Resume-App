@@ -1,15 +1,15 @@
-let nameExe=document.querySelector('.name-exe');
-let passExe=document.querySelector('.pass-exe');
-let emailExe=document.querySelector('.ema-exe');
-let dateExe=document.querySelector('.date-exe');
-let checkBoxExe=document.querySelector('.check-exe');
-let check=document.querySelector('.check');
-let date = new Date();
+var nameExe=document.querySelector('.name-exe');
+var passExe=document.querySelector('.pass-exe');
+var emailExe=document.querySelector('.ema-exe');
+var dateExe=document.querySelector('.date-exe');
+var checkBoxExe=document.querySelector('.check-exe');
+var check=document.querySelector('.check');
+var date = new Date();
 
-let regCheckLatinSymblos=/[A-Za-zA]/;
-let regNum=/[0-9]/;
-let ruSymb=/[Яа-яЁё]/;
-let pattern=/^[^]+@[^ ]+\.[a-z]{2,3}$/;
+var regCheckLatinSymblos=/[A-Za-zA]/;
+var regNum=/[0-9]/;
+var ruSymb=/[Яа-яЁё]/;
+var pattern=/^[^]+@[^ ]+\.[a-z]{2,3}$/;
 
 
 btnOK.addEventListener('click',function (e){
@@ -23,7 +23,6 @@ btnOK.addEventListener('click',function (e){
     }
     else
         checkBoxExe.innerText="checkbox must be checked!";
-
 });
 
 
@@ -44,7 +43,6 @@ function checkDate(){
     addToObject();
 
 }
-
 
 function checkEmail(){
     if(email.value.match(pattern)) {
