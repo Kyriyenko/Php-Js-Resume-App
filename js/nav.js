@@ -11,7 +11,7 @@ window.onload = function () {
 
             if(item.text!=""){
                 $.ajax({
-                    url:'../api.php',
+                    url:'../functionality/api.php',
                     type:'POST',
                     cache:'false',
                     data:{

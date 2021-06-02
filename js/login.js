@@ -25,7 +25,7 @@
 
             if(isNameOk===true&&isPasswordOk===true){
                 $.ajax({
-                    url:'../auth.php',
+                    url:'../functionality/auth.php',
                     type:'POST',
                     cache:false,
                     data:{

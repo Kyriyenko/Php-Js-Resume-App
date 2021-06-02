@@ -31,7 +31,7 @@ $mysql->close();
 
 
 <div class="container">
-    <form  class="container-edit-form" action="../change-content.php" method="post">
+    <form  class="container-edit-form" action="../functionality/change-content.php" method="post">
         <div class="content-edit">
             <h1>Content settings</h1>
             <div class="contact-form-edit">

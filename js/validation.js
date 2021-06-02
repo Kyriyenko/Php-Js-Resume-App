@@ -3,6 +3,10 @@ var passExe=document.querySelector('.pass-exe');
 var emailExe=document.querySelector('.ema-exe');
 var dateExe=document.querySelector('.date-exe');
 var checkBoxExe=document.querySelector('.check-exe');
+var name=document.querySelector('.input-name');
+var email=document.querySelector('.input-email');
+var pass=document.querySelector('.input-password');
+var birthdate=document.querySelector('.input-birthdate');
 var check=document.querySelector('.check');
 var date = new Date();
 
@@ -86,10 +90,7 @@ function checkName()
         nameExe.innerText='incorect name';
         return;
     }
-    if(name.value.length<2){
-        nameExe.innerText='name is too short';
-        return;
-    }
+
 
     if(pattern.test(name.value)){
         nameExe.innerText='name cant include [/%$#@!*&^}]';

@@ -35,7 +35,7 @@ if(count($user)==0)
                 <div class="ol-list">
                     <ol class="li-item" > <?php  echo $user['user_phone']; ?></ol>
                     <ol class="li-item"> <?php  echo $user['user_mail']; ?></ol>
-                    <ol class="li-item"><?php  echo $user['user_network']; ?></ol>
+                    <a href="#" class="li-item"><?php  echo $user['user_network']; ?></a>
                 </div>
             </div>
             <div class="aside-block">
@@ -48,13 +48,11 @@ if(count($user)==0)
                 <div class="head">SKILLS</div>
                 <div class="ol-list">
                     <?php
-
                     $skillsArr=explode(',',$str);
                     for($i=0;$i<count($skillsArr);$i++ )
                     {
                         echo "<ol>$skillsArr[$i]</ol>";
                     }
-
                     ?>
                 </div>
             </div>

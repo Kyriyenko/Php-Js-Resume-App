@@ -31,7 +31,7 @@ $("form").submit(function (event){
 
    if(isNameOkReg===true&&isEmailOkReg===true&&isPasswordOkReg===true){
     $.ajax({
-       url:'../check.php',
+       url:'../functionality/check.php',
        type:'POST',
        cache:'false',
        data:{

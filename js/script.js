@@ -16,7 +16,6 @@ var user={
     password:" ",
     gender:" ",
     birthdate:" ",
-    contact:" ",
     hobbies:" ",
     someWords:" ",
 };
@@ -49,11 +48,10 @@ function addToObject(){
         user.gender = document.getElementById('r2').value;
     }
     user.birthdate=birthdate.value;
-    user.contact=contact.value;
     user.hobbies=hobbies.value;
     user.someWords=someWords.value;
-            showData.innerHTML=+user.name+" "+user.email+"   "+user.password+"   "+user.birthdate+"   "
-            +user.contact+"   "+user.hobbies+"   "+user.someWords;
+            showData.innerHTML=+user.name+" "+user.email+"   "+user.password+"   "+user.birthdate+
+            "   "+user.hobbies+"   "+user.someWords;
 
 }
 
